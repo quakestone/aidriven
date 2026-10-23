@@ -117,7 +117,7 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
         降权：有效权重 = 手工权重 − 失败次数惩罚（每次失败 −12，最多 −96；每次成功 +2 回退）。
         选路顺序 = 显式所选 → 有效权重高 → 延迟低 → 渠道优先级高。
       </div>
-    `,e}},fn=`0.2.1`,pn=`2026-10-23T22:54Z`,mn=class{root;actions;constructor(e,t){this.root=R(`div`,{class:`view`}),e.append(this.root),this.actions=t}update(e){let t=e.channels.find(t=>t.id===e.settings.channel_id),n=e.channels.filter(e=>e.enabled&&e.has_key);this.root.innerHTML=``;let r=R(`div`,{class:`page`});if(r.innerHTML=`
+    `,e}},fn=`0.2.0`,pn=`2026-10-23T22:59Z`,mn=class{root;actions;constructor(e,t){this.root=R(`div`,{class:`view`}),e.append(this.root),this.actions=t}update(e){let t=e.channels.find(t=>t.id===e.settings.channel_id),n=e.channels.filter(e=>e.enabled&&e.has_key);this.root.innerHTML=``;let r=R(`div`,{class:`page`});if(r.innerHTML=`
       <div class="eyebrow">SETTINGS</div>
       <h1>设置</h1>
       <p class="subhead">所有配置都保存在本机 IndexedDB，不上传任何服务器。浏览器直连模型厂商。</p>
