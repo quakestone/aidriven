@@ -1,0 +1,18 @@
+{
+  "id": "intent.sec.kernel",
+  "version": "0.0.1",
+  "name": "INT-RLSD 安全驱动（INTENTOS-root level security driver）",
+  "entry": "index.js",
+  "sha256": "74469da017c13f601335906b65f8b0dfb782a82a169597776e31c466d81284aa",
+  "capabilities": [
+    "log",
+    "kv:sec"
+  ],
+  "deps": {},
+  "slots": [
+    "settings.section"
+  ],
+  "min_host": "0.2.0",
+  "_dispatch": "DISPATCH-INTENT-SEC-001",
+  "_note": "A 轨正式交付件：契约完全按派发书 §3.1/§4.3 冻结。母体 0.1.12 下因 min_host=0.2.0（B1）与 kv:sec 未授权（B2）会被拒载，装载结论如实记 BLOCKED；B 轨联调变体由 e2e 脚本就地生成，不进本包。"
+}
